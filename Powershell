@@ -21,3 +21,6 @@ Select-String -Path 'C:\Users\Jared Graff\Documents\IPs.txt' -Pattern "0.0.0.0"
 
 # Get Hash of File
 Get-Filehash .\test.txt
+
+# Get Date on System
+Get-Date
