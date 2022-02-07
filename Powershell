@@ -18,3 +18,6 @@ netstat
 # Display Network Connections and Search for specific String or IP (This will display all lines that have "0.0.0.0" located in IPs.txt)
 Get-NetworkTCPConnection > 'C:\Users\Jared Graff\Documents\IPs.txt'
 Select-String -Path 'C:\Users\Jared Graff\Documents\IPs.txt' -Pattern "0.0.0.0"
+
+# Get Hash of File
+Get-Filehash .\test.txt
