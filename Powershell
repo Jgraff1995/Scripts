@@ -1,1 +1,4 @@
-
+# View running tasks
+tasklist > 'C:\Users\Jared Graff\Desktop\tasklist.txt'
+# Add IP information to document
+ipconfig /all >> 'C:\Users\Jared Graff\Desktop\tasklist.txt'
