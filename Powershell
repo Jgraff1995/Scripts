@@ -14,3 +14,7 @@ systeminfo
 # Get network connections (two options)
 Get-NetworkTCPConnection
 netstat
+
+# Display Network Connections and Search for specific String or IP
+Get-NetworkTCPConnection > 'C:\Users\Jared Graff\Documents\IPs.txt'
+Select-String -Path 'C:\Users\Jared Graff\Documents\IPs.txt' -Pattern "0.0.0.0"
