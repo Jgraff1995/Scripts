@@ -1,4 +1,8 @@
-# View running tasks
+# Output Tasklist to text file
 tasklist > 'C:\Users\Jared Graff\Desktop\tasklist.txt'
+
 # Add IP information to document
 ipconfig /all >> 'C:\Users\Jared Graff\Desktop\tasklist.txt'
+
+# Output Tasklist to csv
+tasklist /FO csv > 'C:\Users\Jared Graff\Desktop\tasklist.csv'
