@@ -10,3 +10,7 @@ tasklist /FO csv > 'C:\Users\Jared Graff\Desktop\tasklist.csv'
 # Get information on a computer (two options)
 Get-ComputerInfo
 systeminfo
+
+# Get network connections (two options)
+Get-NetworkTCPConnection
+netstat
