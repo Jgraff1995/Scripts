@@ -6,3 +6,7 @@ ipconfig /all >> 'C:\Users\Jared Graff\Desktop\tasklist.txt'
 
 # Output Tasklist to csv
 tasklist /FO csv > 'C:\Users\Jared Graff\Desktop\tasklist.csv'
+
+# Get information on a computer (two options)
+Get-ComputerInfo
+systeminfo
