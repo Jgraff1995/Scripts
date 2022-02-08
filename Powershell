@@ -26,7 +26,10 @@ Get-Filehash .\test.txt
 Get-Date
 
 # Get running processes on system
-Get-Process
+Get-Process |  Select-Object StartTime, ProcessName, ID, Path
+
+# Get info on specific Process ID; Insert PID, brackets not needed
+Get-Process |  Select-Object StartTime, ProcessName, ID, Path | where Id -eq [PID]
 
 # Get software installed on a system
 Get-CimInstance -ClassName Win32_Product | Select-Object Name,Version,Vendor,InstallDate,InstallSource,PackageName,LocalPackage
