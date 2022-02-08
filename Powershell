@@ -27,3 +27,10 @@ Get-Date
 
 # Get running processes on system
 Get-Process
+
+# Get software installed on a system
+Get-CimInstance -ClassName Win32_Product | Select-Object Name,Version,Vendor,InstallDate,InstallSource,PackageName,LocalPackage
+
+# Get User that is logged on the system
+Get-CimInstance –ClassName Win32_ComputerSystem | Select-Object Name, UserName, PrimaryOwnerName, Domain, TotalPhysicalMemory, Model, Manufacturer
+
