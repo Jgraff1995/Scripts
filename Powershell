@@ -34,3 +34,7 @@ Get-CimInstance -ClassName Win32_Product | Select-Object Name,Version,Vendor,Ins
 # Get User that is logged on the system
 Get-CimInstance –ClassName Win32_ComputerSystem | Select-Object Name, UserName, PrimaryOwnerName, Domain, TotalPhysicalMemory, Model, Manufacturer
 
+# Get information on specific network connection; Insert IP and Port number, brackets are not needed
+Get-NetTCPConnection -RemoteAddress [IP] -RemotePort [PORT] | SelectObject CreationTime, LocalAddress, LocalPort, RemoteAddres, RemotePort,
+OwningProcess, State
+
