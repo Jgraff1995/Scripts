@@ -24,3 +24,6 @@ Get-Filehash .\test.txt
 
 # Get Date on System
 Get-Date
+
+# Get running processes on system
+Get-Process
