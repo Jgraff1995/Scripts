@@ -41,3 +41,9 @@ Get-CimInstance –ClassName Win32_ComputerSystem | Select-Object Name, UserName
 Get-NetTCPConnection -RemoteAddress [IP] -RemotePort [PORT] | Select-Object CreationTime, LocalAddress, LocalPort, RemoteAddres, RemotePort,
 OwningProcess, State
 
+# Function displaying free logical disk space over 300GB and exported 
+Function Get-LogicalDisk {
+Get-CimInstance -Class CIM_LogicalDisk | Where-Object FreeSpace -GT '300000000' | Select-Object DeviceID, FreeSpace, VolumeName | Sort-Object FreeSpace
+}
+Export-ModuleMember -Function Get-LogcialDisk
+
