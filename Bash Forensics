@@ -10,3 +10,9 @@ fi
 
 # Find File on the system
 find ./ -name "name of file"
+
+# Search auditd log file and make it human readable
+ausearch -i
+
+# Search auditd for specific event id
+ausearch -i -a [event id]
