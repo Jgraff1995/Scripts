@@ -28,3 +28,12 @@ ls -la
 # Use history to redo a command, (This will redo the 37th command in history)
 history
 !37
+
+# Change permission on file (rwx)
+chmod
+
+# Add user
+useradd
+
+# Reverse Search
+Ctrl+r
