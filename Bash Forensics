@@ -23,3 +23,6 @@ ausearch -i | grep "string"
 # Search the btmp or wtmp file
 last /var/log/btmp
 last /var/log/wtmp
+
+# Extract text from binary files
+strings file.txt
