@@ -1,2 +1,9 @@
 # Search any file in /var/log/* for any IP address
 grep -r -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /var/log/* > output.txt
+
+# Search a file for a specific string and display if it is found or not found
+if grep -Fxq 'string you want to find' "/path/to/file"; then
+    echo "Found"
+else
+    echo "Not found"
+fi
