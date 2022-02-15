@@ -21,3 +21,10 @@ Cat file.txt > grep "string to find"
 # Clear Bash History
 cat /dev/null > ~/.bash_history
 history -c
+
+# view hidden files
+ls -la
+
+# Use history to redo a command, (This will redo the 37th command in history)
+history
+!37
