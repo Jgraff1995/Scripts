@@ -47,3 +47,5 @@ Get-CimInstance -Class CIM_LogicalDisk | Where-Object FreeSpace -GT '300000000' 
 }
 Export-ModuleMember -Function Get-LogcialDisk
 
+# Allowing scripts to execute in PowerShell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
