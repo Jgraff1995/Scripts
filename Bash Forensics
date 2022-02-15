@@ -7,3 +7,6 @@ if grep -Fxq 'string you want to find' "/path/to/file"; then
 else
     echo "Not found"
 fi
+
+# Find File on the system
+find ./ -name "name of file"
