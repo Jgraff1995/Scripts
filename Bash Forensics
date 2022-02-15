@@ -16,3 +16,10 @@ ausearch -i
 
 # Search auditd for specific event id
 ausearch -i -a [event id]
+
+# Search for string in auditd
+ausearch -i | grep "string"
+
+# Search the btmp or wtmp file
+last /var/log/btmp
+last /var/log/wtmp
