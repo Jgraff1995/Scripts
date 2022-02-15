@@ -1,0 +1,2 @@
+# Search any file in /var/log/* for any IP address
+grep -r -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /var/log/* > output.txt
