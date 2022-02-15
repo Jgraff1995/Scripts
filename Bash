@@ -17,3 +17,7 @@ id
 
 # Find string in a file
 Cat file.txt > grep "string to find"
+
+# Clear Bash History
+cat /dev/null > ~/.bash_history
+history -c
