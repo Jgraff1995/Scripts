@@ -1,0 +1,16 @@
+# Get username of system
+whoami
+
+# Get OS version of system
+uname -r
+
+# Get IP of system
+ifconfig
+ip addr
+
+# Get Network Connections to system
+netstat
+ss
+
+# Get Group of current user
+id
