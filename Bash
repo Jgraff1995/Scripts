@@ -14,3 +14,6 @@ ss
 
 # Get Group of current user
 id
+
+# Find string in a file
+Cat file.txt > grep "string to find"
