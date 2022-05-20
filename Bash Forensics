@@ -26,3 +26,6 @@ last /var/log/wtmp
 
 # Extract text from binary files
 strings file.txt
+
+# Find what a file a specific string is located in
+grep -Ril "string"
