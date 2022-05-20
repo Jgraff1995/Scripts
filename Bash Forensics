@@ -29,3 +29,9 @@ strings file.txt
 
 # Find what a file a specific string is located in
 grep -Ril "string"
+
+# Display strings of an executable in REMnux
+pestr
+
+# Display useful strings and API calls within an executable or binary (Does not work in .NET compiled code)
+peframe
