@@ -1,1 +1,14 @@
+# Convert Kilometers to Miles
 
+# Global constant for conversion
+KILOMETERS_TO_MILES = 0.6214
+# main def
+def main():
+    # Get distance in kilometers
+    Kilometer=float(input('enter a distance in kilometers: '))
+    KILOMETERS_TO_MILES = 0.6214
+    Miles = Kilometer * KILOMETERS_TO_MILES
+    print(Miles, 'miles')
+
+# Call the main function.
+main()
