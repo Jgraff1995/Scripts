@@ -52,3 +52,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 # View Sysmon Logs
 Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"}
+
+# View Sysmon Logs and export to Excel
+Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"} | Out-File C:\U
+sers\REM\Desktop\sysmon.xls
