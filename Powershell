@@ -49,3 +49,6 @@ Export-ModuleMember -Function Get-LogcialDisk
 
 # Allowing scripts to execute in PowerShell
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+
+# View Sysmon Logs
+Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"}
