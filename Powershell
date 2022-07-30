@@ -56,3 +56,7 @@ Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"}
 # View Sysmon Logs and export to Excel
 Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"} | Out-File C:\U
 sers\REM\Desktop\sysmon.xls
+
+# View Sysmon Logs in Common-Deliminated CSV
+Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"} |Select-Object
+LogName, MachineName, ProcessId, Id, Message| Export-Csv -Path C:\Users\REM\Desktop\sysmonlogs2.csv -NoTypeInformation
