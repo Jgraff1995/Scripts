@@ -60,3 +60,6 @@ sers\REM\Desktop\sysmon.xls
 # View Sysmon Logs in Common-Deliminated CSV
 Get-WinEvent -FilterHashtable @{logname="Microsoft-Windows-Sysmon/Operational"} |Select-Object
 LogName, MachineName, ProcessId, Id, Message| Export-Csv -Path C:\Users\REM\Desktop\sysmonlogs2.csv -NoTypeInformation
+
+# View User Profiles
+gci 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\' | ForEach-Object { $_.GetValue('ProfileImagePath') }
