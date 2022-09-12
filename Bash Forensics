@@ -35,3 +35,14 @@ pestr
 
 # Display useful strings and API calls within an executable or binary (Does not work in .NET compiled code)
 peframe
+
+# Zeek Log Parsing
+
+## View http.log with relevant fields using zeek-cut
+cat http.log | zeek-cut id.orig_h id.resp_h status_ code uri 
+
+## View dns.log using awk
+cat dns.log | awk '/^[^#]/ {print $3, $10, $22}' 
+
+## View conn.log using awk
+cat conn.log | awk '/^[^#]/ {print $3, $4, $5, $6}'
